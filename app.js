@@ -13,4 +13,4 @@ document.querySelector('.button').addEventListener('click',function(){
 
 });
 
-})(budgetcontroller,uicontroller);
+})(budgetcontroller,uicontroller)
