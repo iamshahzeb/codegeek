@@ -1,0 +1,79 @@
+.image{
+    height: 300px;
+    width: 100%;
+    background-image: url("back.jpg");
+    background-size: 100% 100%;  
+    opacity:0.7;   
+}
+.button
+{
+    background-color: white;
+    border-radius: 50%;
+    border: 1x solid grey;
+    padding:0px;
+    margin-top: -8px; 
+   }
+ .formrow{
+     background-color:#ffcce6;
+     padding: 10px;
+ }
+ .label1
+ {
+     height: 50px;
+     align-content: center;
+     margin-top:15px;
+ }
+ .label2
+ {
+     height: 50px;
+     align-content: center;
+     margin-top:15px;
+ }
+   .income{
+    background-color:#28B9B5;
+    height: 45px; 
+    margin-top:15px;
+    padding: 5px;
+    border-radius:10px;
+   }
+   .income .income-text{
+       color:white;
+      font-weight: bolder;
+    
+   }
+   .expense{
+    background-color:#FF5049;
+    height: 45px; 
+    margin-top:15px;
+    padding: 5px;
+    border-radius:10px;
+    }
+    .expense .expense-text{
+        color:white;
+       font-weight: bolder;
+     
+    }
+    .footer{
+        /* background-color:#ffe6ff; */
+        background-color:#b3b3ff;
+        min-height: 240px;
+    
+    }
+    .footer .lsp{
+        background-image:url("lsp.jpg");
+        background-size: 100% 100%;
+        min-height: 240px;
+        
+    }
+    
+    .footer .rsp{
+        background-image:url("lsp.jpg");
+        background-size: 100% 100%;
+        min-height: 240px;
+        
+    }
+    .footer .foot{
+        background-image:url("footer.png");
+        min-height: 25px;       
+        background-size: 100% 100%;
+    }
