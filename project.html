@@ -13,25 +13,33 @@
                
                 <div class="row">
                   <div class="col">
-                    1 of 2
+                  
                   </div>
                   <div class="col">
                             <div class="row label1">
-                               label1
+                               <h3 id="date"></h3>
                                </div>
                                <div class="row label2">
-                               label2
+                               <h2><span style="color:black;">BUDGET:</span></h2><h2 id="total"></h2>
                                </div>
                                <div class="row income">
-                                <div class="income-text">INCOME</div>
-                                </div>
+                                <div class="col">INCOME</div>
+                                  
+                                      <div class="col" id="income">+ 4,300.00</div>
+                                      <div class="col">45%</div>
+                                  </div>
+                                
+                              
                                 <div class="row expense">
-                                <div class="expense-text">EXPENSE</div>
+                                  <div class="col">EXPENSE</div>
+                                  
+                                      <div class="col" id="expense">+ 4,300.00</div>
+                                      <div class="col">&nbsp;</div>
                                 </div>
 
                   </div>
                   <div class="col">
-                    3 of 3
+                 
                   </div>
                 </div>
         </div>
@@ -41,25 +49,20 @@
       <form >
         <div class="row" >
            
-          <div class="col">
-            <div class="dropdown">
-                <button class="btn btn-outline-info dropdown-toggle" type="button" data-toggle="dropdown"><label>inc/exp</label>
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li class="list-group-item list-group-item-warning">income</li>
-                  <li class="list-group-item list-group-item-danger">expense</li>
-                 
-                </ul>
-              </div>
+          <div class="col-sm-3">
+                <select id="type" class="btn btn-outline-info dropdown-toggle">inc/exp
+                  <option value="inc">income</option>
+                  <option value="exp">expense</option>
+                </select>
+             </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control btn btn-outline-info" id="ifield" placeholder="Enter Description">
           </div>
-          <div class="col">
-            <input type="text" class="form-control btn btn-outline-info" placeholder="Enter Description">
+          <div class="col-sm-3" >
+            <input type="text" id="value" class="form-control btn btn-outline-info" >
           </div>
-          <div class="col">
-            <input type="text" class="form-control btn btn-outline-info" >
-          </div>
-          <div class="col">
-            <button class="button"><img src="tick.png"></button>
+          <div class="col-sm-2">
+            <button class="button" type="button"><img src="tick.png"></button>
           </div>
         </div>
       </form>
@@ -69,12 +72,35 @@
         <div class="col-2">
          <div class="lsp"></div>
         </div>
-        <div class="col-4 ilist">
-        <div>INCOME</div>
-        </div>
-        <div class="col-4 elist">
-          <div>EXPENSE</div>
+       
+<div class="col-4 income">
+        <h2 class="icome__title">INCOME</h2>
+        <div class="income__list">
+        <!-- <div class="item clearfix" id="income-0">
+          <div class="income-description">salary</div>
+          <div class="right clearfix">
+               <div class="item-value">21,000</div>
+                  <div class="item-delete">
+               <button class="item__del--btn"><i class="ion-ios-close-outline"></i></button>
+            </div>
           </div>
+        </div> -->
+      </div> 
+ </div>
+        <div class="col-4 expense">
+        <h2 class="expenses__title">EXPENSE</h2>
+        <div class="expenses__list">
+       <!--<div class="item clearfix" id="expense-0">
+  <div class="expense-description">salary</div>
+            <div class="right clearfix">
+       <div class="item-value">21,000</div>
+              <div class="item-delete">
+              <button class="item__del--btn"><i class="ion-ios-close-outline"></i></button>
+              </div>
+            </div>
+       </div> -->
+       </div>
+</div>
           <div class="col-2">
             <div class="rsp"></div>
             </div>
