@@ -236,4 +236,3 @@ var controller=(function(budctrl,uictrl){
 controller.init();
 
 
-{/* <a class="btn-floating btn-sm blue-gradient"><i class="fas fa-star"></i></a> */}
