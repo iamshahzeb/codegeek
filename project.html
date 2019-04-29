@@ -3,8 +3,20 @@
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+   
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container-fluid">
@@ -13,25 +25,33 @@
                
                 <div class="row">
                   <div class="col">
-                    1 of 2
+                  
                   </div>
                   <div class="col">
                             <div class="row label1">
-                               label1
+                               <h3 id="date"></h3>
                                </div>
                                <div class="row label2">
-                               label2
+                               <h2><span style="color:black;">BUDGET:</span></h2><h2 id="total"></h2>
                                </div>
                                <div class="row income">
-                                <div class="income-text">INCOME</div>
-                                </div>
+                                <div class="col">INCOME</div>
+                                  
+                                      <div class="col" id="income">NULL</div>
+                                      <div class="col"></div>
+                                  </div>
+                                
+                              
                                 <div class="row expense">
-                                <div class="expense-text">EXPENSE</div>
+                                  <div class="col">EXPENSE</div>
+                                  
+                                      <div class="col" id="expense">NULL</div>
+                                      <div class="col">&nbsp;</div>
                                 </div>
 
                   </div>
                   <div class="col">
-                    3 of 3
+                 
                   </div>
                 </div>
         </div>
@@ -41,25 +61,20 @@
       <form >
         <div class="row" >
            
-          <div class="col">
-            <div class="dropdown">
-                <button class="btn btn-outline-info dropdown-toggle" type="button" data-toggle="dropdown"><label>inc/exp</label>
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li class="list-group-item list-group-item-warning">income</li>
-                  <li class="list-group-item list-group-item-danger">expense</li>
-                 
-                </ul>
-              </div>
+          <div class="col-sm-3">
+                <select id="type" class="btn btn-outline-info dropdown-toggle">inc/exp
+                  <option value="inc">income</option>
+                  <option value="exp">expense</option>
+                </select>
+             </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control btn btn-outline-info" id="ifield" placeholder="Enter Description">
           </div>
-          <div class="col">
-            <input type="text" class="form-control btn btn-outline-info" placeholder="Enter Description">
+          <div class="col-sm-3" >
+            <input type="text" id="value" class="form-control btn btn-outline-info" >
           </div>
-          <div class="col">
-            <input type="text" class="form-control btn btn-outline-info" >
-          </div>
-          <div class="col">
-            <button class="button"><img src="tick.png"></button>
+          <div class="col-sm-2">
+            <button class="button" type="button"><img src="tick.png"></button>
           </div>
         </div>
       </form>
@@ -69,12 +84,36 @@
         <div class="col-2">
          <div class="lsp"></div>
         </div>
-        <div class="col-4 ilist">
-        <div>INCOME</div>
-        </div>
-        <div class="col-4 elist">
-          <div>EXPENSE</div>
+       
+<div class="col-4 income">
+        <h2 class="icome__title">INCOME</h2>
+        <div class="income__list">
+        <!-- <div class="item clearfix" id="income-0">
+          <div class="income-description">salary</div>
+          <div class="right clearfix">
+               <div class="item-value">21,000</div>
+                  <div class="item-delete">
+               <button class="item__del--btn"><i class="ion-ios-close-outline"></i></button>
+            </div>
           </div>
+        </div> -->
+      </div> 
+ </div>
+        <div class="col-4 expense">
+        <h2 class="expenses__title">EXPENSE</h2>
+        <div class="expenses__list">
+  
+      <!-- <div class="item clearfix" id="inc-%id%">
+        <div class="item__description">%description%</div>
+        <div class="item__value">%value%</div>
+        <div class="item__del--btn">
+          <button type="button" class="buttondel"><img src="del2.png" class="rounded-circle" alt="Smiley face" >
+          </button>
+        </div>
+        </div> -->
+
+       </div>
+</div>
           <div class="col-2">
             <div class="rsp"></div>
             </div>
@@ -86,7 +125,15 @@
           </div>
     </div>
 </div>
-
+ <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
